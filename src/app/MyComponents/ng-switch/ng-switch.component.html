@@ -1,0 +1,19 @@
+<div class="text-center">
+<div [ngSwitch]="color">
+  <div *ngSwitchCase="'red'">You selected Red</div>
+  <div *ngSwitchCase="'blue'">You selected Blue</div>
+  <div *ngSwitchCase="'green'">You selected Green</div>
+  <div *ngSwitchDefault>Select Again</div>
+</div>
+</div>
+
+<div class="text-center">
+  <button class="btn btn-danger m-3" (click)="select('red')">Red</button>
+  <br>
+  <button class="btn btn-success m-3" (click)="select('green')">Green</button>
+  <br>
+  <button class="btn btn-primary m-3" (click)="select('blue')">Blue</button>
+  <br>
+  <button class="btn btn-secondary m-3" (click)="select('')">Default</button>
+  <br>
+</div>

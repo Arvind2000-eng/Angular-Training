@@ -1,0 +1,30 @@
+<div class="text-center">
+  <div *ngIf="10">
+    10
+  </div>
+
+  <div *ngIf="0">
+    0
+  </div>
+
+  <div *ngIf="'hello world'">
+    "hello world"
+  </div>
+
+  <div *ngIf="''">
+    ""
+  </div>
+
+  <div *ngIf="v1; then thenBlock; else elseBlock"></div>
+  <ng-template #thenBlock>
+    <h5>Block will be hide after click button</h5>
+  </ng-template>
+
+  <ng-template #elseBlock>
+    <h5>value hidden</h5>
+  </ng-template>
+
+  <div>
+    <button class="btn btn-primary" (click)="changeState()">click here</button>
+  </div>
+</div>

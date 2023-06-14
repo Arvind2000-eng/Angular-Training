@@ -1,0 +1,28 @@
+<h3 class="text-center mt-2">
+  event-handling
+</h3>
+<div class="text-center">
+  <div class="mt-3">
+  <strong>Click Event</strong>
+  <button class="btn btn-primary" (click)="onClick()">click</button>
+</div>
+  <br>
+  <div class="mt-3">
+  <strong>Change Event</strong>
+  <input type="text" #box (change)="onChangeText(box.value,box1.value)" placeholder="change event">
+  <br>
+  <p>You entered value= <strong>{{textBox1Val}}</strong></p>
+
+  <br>
+  <div class="mt-3">
+  <strong>blur Event</strong>
+  <input type="text" #box1 (blur)="onChangeText(box.value,box1.value)" placeholder="change event">
+  <br>
+  <p>You entered value= <strong>{{textBox2Val}}</strong></p>
+
+</div>
+<br>
+  <div class="mt-3">
+  <strong>selection change Event</strong>
+  <br>
+</div>

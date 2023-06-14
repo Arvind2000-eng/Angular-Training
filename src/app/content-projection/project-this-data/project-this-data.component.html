@@ -1,0 +1,16 @@
+<p>
+  Project this data......
+</p>
+
+<h3>Multi-slot content projection</h3>
+
+Default:
+<ng-content></ng-content>
+
+Question:
+<ng-content select="[question]"></ng-content>
+
+Question1:
+<ng-container ngProjectAs="[question1]">
+  <p>Is content projection cool-1?</p>
+</ng-container>

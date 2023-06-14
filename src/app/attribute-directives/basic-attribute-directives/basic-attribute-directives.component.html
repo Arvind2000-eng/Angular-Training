@@ -1,0 +1,13 @@
+<div>
+  enter data : 
+  <input name="credit-card"
+  credit-card> <!--Directive name-->
+
+  <label #myTooltip="tooltip"
+  tooltip="this is tooltip yaaa!"> <!--here we are passing directive and input parameter for directive. Note: function name on directive same please check -->
+    please add some thing here : 
+    <span (mouseover)="myTooltip.hide()" (mouseout)="myTooltip.show()"> (?)
+    </span>
+    <input type="text" />
+  </label>
+</div>

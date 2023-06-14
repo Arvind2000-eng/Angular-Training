@@ -1,0 +1,7 @@
+<div class="text-center">
+  <strong>Enter Number: </strong>
+  <input type="text" #text1 (keyup)="keyUpFunc(text1.value)">
+  <p>You entered value= <strong>{{data}}</strong></p>
+  
+</div>
+<app-child [message]="'input parameter'" [alert-pop]="val" (onSignup)="onSubmit()"></app-child>
